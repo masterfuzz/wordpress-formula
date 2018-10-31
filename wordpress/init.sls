@@ -1,6 +1,8 @@
 {% from "wordpress/map.jinja" import map with context %}
 
 include:
+  - php.mysql
+  - apache.mod_php5
   - wordpress.cli
 
 {% for id, site in salt['pillar.get']('wordpress:sites', {}).items() %}
