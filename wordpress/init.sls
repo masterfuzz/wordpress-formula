@@ -1,6 +1,7 @@
 {% from "wordpress/map.jinja" import map with context %}
 
 include:
+  - mysql.client
   - php.mysql
   - apache.mod_php5
   - wordpress.cli
